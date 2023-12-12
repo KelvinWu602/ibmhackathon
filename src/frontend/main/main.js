@@ -1,3 +1,5 @@
+// Half finished, serve as examples
+
 //const token = localStorage.getItem("token");
 const token = "kelvin"
 let userdata = []
@@ -10,13 +12,12 @@ fetch(`http://localhost:8000/todos?token=${token}`)
   .then(data => {
     // Process the response data
     userdata = data;
+
   })
   .catch(error => {
     // Handle any errors
     console.error(error);
   });
-
-// Add elements in the Item list
 
 // called by onClick event of the Add button in html
 function addItemInList(list_id, completed=false){
