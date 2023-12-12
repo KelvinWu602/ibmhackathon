@@ -1,0 +1,12 @@
+
+# POST 
+curl -X POST -H "Content-Type: application/json" -d '{"param1": "value1", "param2": "value2"}' https://example.com/api/endpoint
+
+# PATCH
+curl -X PATCH -H "Content-Type: application/json" -d '{"param1": "value1", "param2": "value2"}' https://example.com/api/endpoint
+
+# GET 
+curl https://example.com/api/endpoint?param1=a&param2=b
+
+# DELETE
+curl -X DELETE -d '{"param1": "value1", "param2": "value2"}' -H "Content-Type: application/json" https://example.com/api/endpoint
